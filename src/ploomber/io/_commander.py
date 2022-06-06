@@ -179,6 +179,9 @@ class Commander:
 
         return supress
 
+    def force_delete(self):
+        self.rm(*self._to_delete)
+
     def rm(self, *args):
         """Deletes all files/directories
 
